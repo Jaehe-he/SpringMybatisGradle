@@ -1,0 +1,15 @@
+server:
+  port: 8091
+
+#mysql setting
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db-324oat-kr.vpc-pub-cdb.ntruss.com:3306/studydb?serverTimezone=Asia/Seoul
+    username : study
+    password : bitcamp!@#123 
+
+mybatis:
+  type-aliases-package: data.dto
+  mapper-locations:
+  - /mapper/**/*.xml
